@@ -1,0 +1,20 @@
+{
+  "name": "advent-of-code-2023-1",
+  "version": "1.0.0",
+  "description": "coding challenge",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomBirbeck/advent-of-code-2023.git"
+  },
+  "author": "TBirbeck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomBirbeck/advent-of-code-2023/issues"
+  },
+  "homepage": "https://github.com/TomBirbeck/advent-of-code-2023#readme"
+}
