@@ -25,33 +25,21 @@ const extractNumbers = (input) => {
 // console.log(extractNumbers(trimmedInput));
 //54239
 
-const tests = [
-  'two1nine',
-  'eightwothree',
-  'abcone2threexyz',
-  'xtwone3four',
-  '4nineeightseven2',
-  'zoneight234',
-  '7pqrstsixteen',
-];
-
 const translateNumbers = (array) => {
   const returnedStrings = [];
   for (let item of array) {
-    const originalString = item;
-    item.replace(/one/g, '1');
-    item.replace(/two/g, '2');
-    item.replace(/three/g, '3');
-    item.replace(/four/g, '4');
-    item.replace(/five/g, '5');
-    item.replace(/six/g, '6');
-    item.replace(/seven/g, '7');
-    item.replace(/eight/g, '8');
-    item.replace(/nine/g, '9');
-    returnedStrings.push([item]);
+    item = item.replace(/one/g, 'o1e');
+    item = item.replace(/two/g, 't2o');
+    item = item.replace(/three/g, 'th3ee');
+    item = item.replace(/four/g, 'fo4r');
+    item = item.replace(/five/g, 'f5ve');
+    item = item.replace(/six/g, 's6x');
+    item = item.replace(/seven/g, 'se7en');
+    item = item.replace(/eight/g, 'ei8ht');
+    item = item.replace(/nine/g, 'ni9e');
+    returnedStrings.push(item);
   }
   return returnedStrings;
 };
-const replaced = tests[0].replace(/two/g, '2');
-console.log(translateNumbers(tests));
-// translateNumbers(tests);
+console.log(extractNumbers(translateNumbers(trimmedInput)));
+//55343
